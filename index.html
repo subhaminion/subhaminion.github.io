@@ -41,9 +41,9 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">About Me</a></li>
+							<li><a href="#intro">Intro</a></li>
 							<!-- <li><a href="#one">Who I am</a></li> -->
-							<li><a href="#two">What I do</a></li>
+							<!-- <li><a href="#two">What I do</a></li> -->
 							<li><a href="#three">Get in touch</a></li>
 						</ul>
 					</nav>
@@ -106,20 +106,20 @@
 					</section> -->
 
 				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
+					<!-- <section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h2>What I do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<p>I'm a freelance Software Engineer. I mostly work on Web Development, My technical stack included PHP, Python, JavaScript, Laravel, CodeIgniter, CakePHP and Django.</p>
 							<div class="features">
 								<section>
 									<span class="icon major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>Web Development</h3>
+									<p>Feel free to reach out me with any kind of Web Development projects.</p>
 								</section>
 								<section>
-									<span class="icon major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<span class="icon major fa-code"></span>
+									<h3>PHP Stack</h3>
+									<p></p>
 								</section>
 								<section>
 									<span class="icon major fa-cog"></span>
@@ -146,13 +146,13 @@
 								<li><a target="_blank" href="https://docs.google.com/document/d/1_HMkNizHOmPIegTEdeKbN-3dasGQFdyUaJlBNbyt49Q" class="button special icon fa-download">Resume</a></li>
 							</ul>
 						</div>
-					</section>
+					</section> -->
 
 				<!-- Three -->
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<p>Feel free get in touch with me with all sorts of freelance development project. For my work demo please contact me.</p>
 							<div class="split style1">
 								<section>
 									<form method="post" action="#">
@@ -168,10 +168,10 @@
 											<label for="message">Message</label>
 											<textarea name="message" id="message" rows="5"></textarea>
 										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+										
+									</form><ul class="actions">
+											<li><button type="submit" id="emailLink" class="button submit">Send Message</button> </li>
 										</ul>
-									</form>
 								</section>
 								<section>
 									<ul class="contact">
@@ -225,6 +225,18 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+				$(function () {
+				  $('#emailLink').on('click', function (event) {
+				    alert("Huh");
+				    var email = $('#email').val();
+				    var subject = $('#name').val() + ' Coming from sbcharjee website';
+				    var emailBody = $('#message').val();
+				    alert('mailto:' + email + '?subject=' + subject + '&body=' +   emailBody);
+				    // window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+				  });
+				});
+			</script>
 
 	</body>
 </html>
