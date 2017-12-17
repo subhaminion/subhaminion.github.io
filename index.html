@@ -228,12 +228,12 @@
 			<script type="text/javascript">
 				$(function () {
 				  $('#emailLink').on('click', function (event) {
-				    alert("Huh");
+				    // alert("Huh");
 				    var email = $('#email').val();
 				    var subject = $('#name').val() + ' Coming from sbcharjee website';
 				    var emailBody = $('#message').val();
-				    alert('mailto:' + email + '?subject=' + subject + '&body=' +   emailBody);
-				    // window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+				    // alert('mailto:' + email + '?subject=' + subject + '&body=' +   emailBody);
+				    window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
 				  });
 				});
 			</script>
