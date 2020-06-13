@@ -392,12 +392,13 @@ p {
     -webkit-transform: translateX(0%);
     transform: translateX(0%); }
   .content-block .person-img {
-    height: 150px;
+    height: 123px;
     width: 150px;
     background: url(../img/candidate.png);
-    border-radius: 50%;
+    border-radius: 30%;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+}
 
 /********Header Sec CSS********/
 .btn {
